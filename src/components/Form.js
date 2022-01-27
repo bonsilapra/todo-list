@@ -11,15 +11,22 @@ const Form = ({inputText, setInputText, todos, setTodos, setStatus}) => {
         {inputText!="" &&
         setTodos([
             ...todos, 
-            {text: inputText, completed: false, id:Math.random()*1000}
+            {text: inputText, completed: false, removed: false, id:Math.random()*1000}
         ])
         }
         setInputText("")
     }
 
+    const handleKeyDown = (event) => {
+        if (event.key === 'Enter') {
+            submitTodoHandler()
+        }
+    }
+
     const statusHandler = (e) => {
         setStatus(e.target.value)
     }
+
     return (
         <form className="main-form">
             <div>
@@ -29,11 +36,13 @@ const Form = ({inputText, setInputText, todos, setTodos, setStatus}) => {
                     className="todo-input"
                     onChange={inputTextHandler}
                     placeholder="Add new task"
+                    onKeyDown={handleKeyDown}
                 />
                 <button 
                     className="todo-button" 
                     type="submit"
                     onClick={submitTodoHandler}
+                    title="Add task"
                 >
                     <i className="fas fa-plus-square"></i>
                 </button>
