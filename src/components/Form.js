@@ -29,7 +29,7 @@ const Form = ({inputText, setInputText, todos, setTodos, setStatus}) => {
 
     return (
         <form className="main-form">
-            <div>
+            <div className="form-input">
                 <input 
                     value={inputText}
                     type="text" 
@@ -38,6 +38,8 @@ const Form = ({inputText, setInputText, todos, setTodos, setStatus}) => {
                     placeholder="Add new task"
                     onKeyDown={handleKeyDown}
                 />
+            </div>
+            <div className="form-todo-button">
                 <button 
                     className="todo-button" 
                     type="submit"

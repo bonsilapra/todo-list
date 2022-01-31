@@ -30,7 +30,7 @@ form button {
   font-size: 2rem;
   border: none;
   background: #F2F2F2;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px 10px 10px 10px;
   font-family: "Nunito", sans-serif;
 }
 form button {
@@ -38,12 +38,13 @@ form button {
   background: #F2F2F2;
   cursor: pointer;
   transition: all 0.3s ease;
-  border-radius: 0 10px 10px 0;
+  border-radius: 10px 10px 10px 10px;
 }
 form button:hover {
   background: #7283A6;
   color: #F2F2F2;
 }
+
 
 
 .todo-container {
@@ -100,7 +101,7 @@ form button:hover {
   border-radius: 10px;
   background: #F2F2F2;
   font-size: 30px;
-  padding-left: 0.5rem;
+  height: 50px;
 }
 
 .todo li {
@@ -211,7 +212,7 @@ select {
 
 /* Custom Select */
 .select {
-  margin: 1rem;
+  margin-left: 1rem;
   position: relative;
   overflow: hidden;
 }
@@ -247,5 +248,38 @@ select {
     flex-direction: column;
   }
 
+  form {
+    margin-bottom: 20px;
+  }
+
+  form button {
+    margin-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100px
+  }
+
+  .form-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form input {
+    width: 95%;
+  }
+
+  .todo-list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .todo {
+    width: 90%;
+  }
 }
 
