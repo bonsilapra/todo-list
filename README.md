@@ -1,3 +1,20 @@
+# About
+
+This is a simple app created to organize daily tasks. App allows to add, edit, check/uncheck and remove tasks. It was created to practice basic skills in React.js.
+
+## Live demo
+
+[Todo App](http://joanna-falkowska.pl/todo-list)
+
+## Technology stack and tools:
+
+- React.js
+- JavaScript
+- HTML
+- CSS
+- react-dom
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
